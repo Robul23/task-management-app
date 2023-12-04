@@ -1,0 +1,122 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.container:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 38px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #007bff;
+}
+
+.task-form input[type="text"],
+.task-form button {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-list li {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+
+  position: relative;
+}
+
+.task-list li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-list li .edit-btn {
+  background-color: #007bff;
+}
+
+.task-list li .edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.task-list li .delete-btn {
+  background-color: #dc3545;
+}
+
+.task-list li .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background-color: #007bff;
+  box-shadow: 0 0 15px #007bff;
+}
